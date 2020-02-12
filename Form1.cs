@@ -622,7 +622,7 @@ namespace WindowsFormsApplication1
     {
         public override int Compare(Node x, Node y)
         {
-            return (y.step + y.value<<2).CompareTo(x.value<<2 + x.step);
+            return (y.step + (y.value<<2)).CompareTo((x.value<<2) + x.step);
             throw new NotImplementedException();
         }
     }
